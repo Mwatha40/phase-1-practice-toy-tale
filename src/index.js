@@ -95,6 +95,7 @@ function increment(event) {
   let count = parseInt(event.target.previousElementSibling.innerText) + 1;
 
 
+  
   fetch(`http://localhost:3000/toys/${event.target.id}`, {
     method: "PATCH",
     headers: {
